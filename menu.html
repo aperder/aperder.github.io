@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .bg {
+            background: url(image/top.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+        }
+        
+        .navFather {
+            background-color: skyblue;
+        }
+        
+        .nav {
+            margin: 0 auto;
+            height: 50px;
+            display: flex;
+            width: 600px;
+        }
+        
+        .nav a {
+            flex: 1;
+            text-align: center;
+            line-height: 50px;
+            text-decoration: none;
+        }
+        
+        .nav a:hover {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        
+        .home {
+            color: black;
+        }
+        
+        .menu {
+            color: white;
+        }
+        
+        .contact {
+            color: black;
+        }
+        
+        .food {
+            height: 450px;
+            margin-top: 30px;
+            padding-left: 60px;
+            padding-right: 60px;
+            display: flex;
+        }
+        
+        .fooddetail {
+            width: 500px;
+            height: 400px;
+            background-color: rgba(29, 115, 141, 0.1);
+            margin-left: 150px;
+            position: relative;
+        }
+        
+        .fooddetail img {
+            width: 40%;
+            height: 65%;
+            margin-top: 8%;
+            margin-left: 20px;
+        }
+        
+        .fooddetail .describeName {
+            position: absolute;
+            top: 13%;
+            left: 50%;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        
+        .fooddetail .describePrice {
+            position: absolute;
+            top: 28%;
+            left: 50%;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        
+        .fooddetail .describe {
+            position: absolute;
+            top: 42%;
+            left: 50%;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        
+        .fooddetail .describeDetail {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 16px;
+            font-weight: 400;
+            text-indent: 2;
+        }
+        
+        .btn {
+            width: 200px;
+            height: 30px;
+            position: absolute;
+            bottom: 30px;
+            left: 150px;
+            background-color: skyblue;
+            border-radius: 20px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div class="navFather">
+        <div class="nav">
+            <a href="home.html" class="home">主页</a>
+            <a href="menu.html" class="menu">菜单</a>
+            <a href="contact.html" class="contact">联系我们</a>
+        </div>
+    </div>
+    <div class="food">
+        <div class="fooddetail">
+            <img src="image/bread.jpg" alt="">
+            <div class="describeName">面包</div>
+            <div class="describePrice">价格: 5/个</div>
+            <div class="describe">描述</div>
+            <div class="describeDetail">口感丝滑，甜而不腻，本店的甜品榜销量第一，店家极力推荐。</div>
+            <Button class="btn">立即下单</Button>
+        </div>
+        <div class="fooddetail">
+            <img src="image/noodle.jpg" alt="">
+            <div class="describeName">火鸡面</div>
+            <div class="describePrice">价格: 15r/碗</div>
+            <div class="describe">描述</div>
+            <div class="describeDetail">独家的秘方，令人回味无穷的口感，本店的招牌，回头客必点菜品之一。</div>
+            <Button class="btn">立即下单</Button>
+        </div>
+    </div>
+</body>
+
+</html>
