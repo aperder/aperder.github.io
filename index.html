@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .bg {
+            background: url(image/top.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+        }
+        
+        .navFather {
+            background-color: skyblue;
+        }
+        
+        .nav {
+            margin: 0 auto;
+            height: 50px;
+            display: flex;
+            width: 600px;
+        }
+        
+        .nav a {
+            flex: 1;
+            text-align: center;
+            line-height: 50px;
+            text-decoration: none;
+        }
+        
+        .nav a:hover {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        
+        .home {
+            color: white;
+        }
+        
+        .menu {
+            color: black;
+        }
+        
+        .contact {
+            color: black;
+        }
+        
+        .foodFather {
+            height: 450px;
+            padding-left: 60px;
+            padding-right: 60px;
+            display: flex;
+            background-color: #f3f5f7;
+        }
+        
+        .food {
+            flex: 1;
+            height: 400px;
+            width: 100px;
+            margin-top: 30px;
+            margin-left: 40px;
+            margin-right: 40px;
+            background-color: rgba(29, 115, 141, 0.1);
+            position: relative;
+        }
+        
+        .food img {
+            width: 240px;
+            height: 200px;
+            margin-top: 15px;
+            margin-left: 20px;
+        }
+        
+        .food .foodName {
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 15px;
+        }
+        
+        .food .describe {
+            text-align: center;
+            margin-top: 15px;
+        }
+        
+        .food button {
+            width: 100px;
+            height: 30px;
+            background-color: skyblue;
+            border-radius: 10px;
+            position: absolute;
+            bottom: 20px;
+            left: 90px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div class="navFather">
+        <div class="nav">
+            <a href="home.html" class="home">主页</a>
+            <a href="menu.html" class="menu">菜单</a>
+            <a href="contact.html" class="contact">联系我们</a>
+        </div>
+    </div>
+    <div class="foodFather">
+        <div class="food">
+            <img src="image/noodle.jpg" alt="">
+            <div class="foodName">火鸡面</div>
+            <div class="describe">够辣，够爽，够给力。</div>
+            <button>立即下单</button>
+        </div>
+        <div class="food">
+            <img src="image/Porridge.jpg" alt="">
+            <div class="foodName">粥</div>
+            <div class="describe">来碗清粥，养心养肝还养肺。</div>
+            <button>立即下单</button>
+        </div>
+        <div class="food">
+            <img src="image/bread.jpg" alt="">
+            <div class="foodName">面包</div>
+            <div class="describe">口感丝滑，甜而不腻。</div>
+            <button>立即下单</button>
+        </div>
+        <div class="food">
+            <img src="image/chip.jpg" alt="">
+            <div class="foodName">炸薯条</div>
+            <div class="describe">嫩嫩的，脆脆的，值得品尝。</div>
+            <button>立即下单</button>
+        </div>
+    </div>
+</body>
+
+</html>
